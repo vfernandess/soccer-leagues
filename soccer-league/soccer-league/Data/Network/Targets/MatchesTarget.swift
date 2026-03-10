@@ -19,15 +19,12 @@ enum MatchesTarget: TargetType {
     var task: Task {
         switch self {
         case let .list(page, perPage):
-            let startOfToday = Calendar.current.startOfDay(for: Date())
-            let todayISO = ISO8601DateFormatter().string(from: startOfToday)
             return .requestParameters(
                 parameters: [
                     "page[number]": page,
                     "page[size]": perPage,
                     "sort": "-status,begin_at",
                     "filter[status]": "finished,not_started,running",
-//                    "filter[end_at]": "\(todayISO),"
                 ],
                 encoding: URLEncoding.queryString
             )

@@ -12,10 +12,3 @@ struct Match: Equatable, Hashable, Identifiable, Sendable {
     var team1: Team? { teams[safe: 0] }
     var team2: Team? { teams[safe: 1] }
 }
-
-// Safe subscript for arrays
-extension Array {
-    subscript(safe index: Int) -> Element? {
-        indices.contains(index) ? self[index] : nil
-    }
-}

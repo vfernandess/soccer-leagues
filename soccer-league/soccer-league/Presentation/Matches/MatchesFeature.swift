@@ -1,5 +1,4 @@
 import ComposableArchitecture
-import Combine
 
 @Reducer
 struct MatchesFeature {
@@ -112,9 +111,7 @@ struct MatchesFeature {
                 state.isLoadingMore = false
                 state.currentPage += 1
                 state.hasMorePages = response.hasNextPage
-                var seen = Set(state.matches.map(\.id))
-                let newMatches = response.matches.filter { seen.insert($0.id).inserted }
-                state.matches += newMatches
+                state.matches = FetchMatchesInteractor.deduplicated(state.matches + response.matches)
                 return .none
 
             case .paginationResponse(.failure):

@@ -5,11 +5,7 @@ struct MatchDetailFeature {
     struct TeamPlayersState: Equatable {
         var players: [Player] = []
 
-        var isEmpty: Bool {
-            get {
-                return players.isEmpty
-            }
-        }
+        var isEmpty: Bool { players.isEmpty }
     }
 
     @ObservableState
@@ -51,8 +47,8 @@ struct MatchDetailFeature {
                 return .run { [dismiss] _ in await dismiss() }
 
             case .initialize:
-                guard state.team1.players.isEmpty,
-                      state.team2.players.isEmpty,
+                guard state.team1.isEmpty,
+                      state.team2.isEmpty,
                       state.error == nil,
                       !state.isLoading else { return .none }
                 state.isLoading = true

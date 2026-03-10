@@ -25,14 +25,22 @@ struct MatchMapper {
         }
     }
 
+    private static let isoFormatterFull: ISO8601DateFormatter = {
+        let f = ISO8601DateFormatter()
+        f.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return f
+    }()
+
+    private static let isoFormatter: ISO8601DateFormatter = {
+        let f = ISO8601DateFormatter()
+        f.formatOptions = [.withInternetDateTime]
+        return f
+    }()
+
     private static func parseDate(_ raw: String?) -> Date? {
         guard let raw else { return nil }
-        let formatter = ISO8601DateFormatter()
-        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
-        if let date = formatter.date(from: raw) { return date }
-        // Retry without fractional seconds
-        formatter.formatOptions = [.withInternetDateTime]
-        return formatter.date(from: raw)
+        if let date = isoFormatterFull.date(from: raw) { return date }
+        return isoFormatter.date(from: raw)
     }
 }
 

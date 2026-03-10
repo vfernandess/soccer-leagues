@@ -4,7 +4,14 @@ struct MatchStatusBadge: View {
     let status: MatchStatus
     let beginAt: Date?
 
-    private var badgeText: String { status.badgeLabel(beginAt: beginAt) }
+    private var badgeText: String {
+        switch status {
+        case .inProgress: return "AGORA"
+        case .scheduled, .ended:
+            guard let date = beginAt else { return "A definir" }
+            return date.matchBadgeText()
+        }
+    }
 
     private var badgeColor: Color {
         status == .inProgress ? .liveBadge : .scheduledBadge
@@ -38,15 +45,3 @@ struct MatchStatusBadge: View {
         .background(Color.appBackground)
 }
 
-// MARK: - Display formatting (Presentation layer)
-
-extension MatchStatus {
-    func badgeLabel(beginAt: Date?) -> String {
-        switch self {
-        case .inProgress: return "AGORA"
-        case .scheduled, .ended:
-            guard let date = beginAt else { return "A definir" }
-            return date.matchBadgeText()
-        }
-    }
-}
