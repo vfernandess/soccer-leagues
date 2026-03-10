@@ -1,0 +1,19 @@
+# Secrets
+.env
+soccer-league/**/secrets.c
+
+# Xcode
+*.xcuserstate
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcuserdata/
+
+# SPM
+.build/
+.swiftpm/
+
+# CocoaPods (not used but safe)
+Pods/
+
+# macOS
+.DS_Store
