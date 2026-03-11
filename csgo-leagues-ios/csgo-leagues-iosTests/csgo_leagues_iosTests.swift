@@ -1,6 +1,6 @@
 //
-//  soccer_leagueTests.swift
-//  soccer-leagueTests
+//  csgo_leagues_iosTests.swift
+//  csgo-leagues-iosTests
 //
 //  Created by Victor Fernandes on 05/03/26.
 //
@@ -8,7 +8,7 @@
 import Testing
 import Foundation
 import ComposableArchitecture
-@testable import soccer_league
+@testable import csgo_leagues_ios
 
 // MARK: - Helpers
 

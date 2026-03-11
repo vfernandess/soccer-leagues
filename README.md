@@ -34,7 +34,7 @@ Clean Architecture + TCA (The Composable Architecture)
 1. **Clone the repository**
    ```bash
    git clone <repo-url>
-   cd soccer-league
+   cd csgo-leagues-ios
    ```
 
 2. **Set up your API token**
@@ -47,7 +47,7 @@ Clean Architecture + TCA (The Composable Architecture)
 
 3. **Open in Xcode**
    ```bash
-   open soccer-league/soccer-league.xcodeproj
+   open csgo-leagues-ios/csgo-leagues-ios.xcodeproj
    ```
 
 4. **Build & Run** — Select an iOS 17+ simulator and press Cmd+R

@@ -1,13 +1,13 @@
 //
-//  soccer_leagueUITestsLaunchTests.swift
-//  soccer-leagueUITests
+//  csgo_leagues_iosUITestsLaunchTests.swift
+//  csgo-leagues-iosUITests
 //
 //  Created by Victor Fernandes on 05/03/26.
 //
 
 import XCTest
 
-final class soccer_leagueUITestsLaunchTests: XCTestCase {
+final class csgo_leagues_iosUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

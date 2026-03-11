@@ -2,7 +2,7 @@ import SwiftUI
 import ComposableArchitecture
 
 @main
-struct soccer_leagueApp: App {
+struct csgo_leagues_iosApp: App {
     var body: some Scene {
         WindowGroup {
             AppView(

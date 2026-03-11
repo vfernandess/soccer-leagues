@@ -1,13 +1,13 @@
 //
-//  soccer_leagueUITests.swift
-//  soccer-leagueUITests
+//  csgo_leagues_iosUITests.swift
+//  csgo-leagues-iosUITests
 //
 //  Created by Victor Fernandes on 05/03/26.
 //
 
 import XCTest
 
-final class soccer_leagueUITests: XCTestCase {
+final class csgo_leagues_iosUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

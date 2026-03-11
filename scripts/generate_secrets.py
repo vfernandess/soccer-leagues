@@ -51,7 +51,7 @@ def main():
     # Output path relative to project root
     out_path = os.path.join(
         project_root,
-        'soccer-league', 'soccer-league', 'Core', 'Secrets', 'secrets.c'
+        'csgo-leagues-ios', 'csgo-leagues-ios', 'Core', 'Secrets', 'secrets.c'
     )
 
     c_bytes = ', '.join(f'0x{b:02X}' for b in obfuscated)

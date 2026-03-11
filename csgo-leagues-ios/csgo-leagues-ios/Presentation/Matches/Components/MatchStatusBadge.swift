@@ -5,12 +5,7 @@ struct MatchStatusBadge: View {
     let beginAt: Date?
 
     private var badgeText: String {
-        switch status {
-        case .inProgress: return "AGORA"
-        case .scheduled, .ended:
-            guard let date = beginAt else { return "A definir" }
-            return date.matchBadgeText()
-        }
+        status.badgeLabel(beginAt: beginAt)
     }
 
     private var badgeColor: Color {
