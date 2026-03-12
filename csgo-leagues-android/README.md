@@ -21,6 +21,10 @@ Android app for browsing CS:GO matches from the PandaScore API.
 
 The app is split into shared infrastructure plus feature packages.
 
+Architecture diagram:
+
+![Architecture flow](../FLOW-ARCH.png)
+
 ### Shared layers
 
 - `com.voidx.csgo.core`
