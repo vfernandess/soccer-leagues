@@ -1,6 +1,7 @@
 # Secrets
 .env
 soccer-league/**/secrets.c
+csgo-leagues-android/app/src/main/cpp/secrets.cpp
 
 # Xcode
 *.xcuserstate
@@ -17,3 +18,10 @@ Pods/
 
 # macOS
 .DS_Store
+__pycache__/
+
+# Android
+local.properties
+*.apk
+csgo-leagues-android/.gradle/
+csgo-leagues-android/**/build/

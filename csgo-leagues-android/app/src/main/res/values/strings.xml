@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CSTV</string>
+    <string name="splash_logo_content_description">Fuze logo</string>
+    <string name="matches_title">Partidas</string>
+    <string name="matches_retry">Retry</string>
+    <string name="matches_empty">No matches found</string>
+    <string name="matches_error_generic">Something went wrong</string>
+    <string name="matches_versus">vs</string>
+    <string name="matches_team_tbd">TBD</string>
+    <string name="matches_live_now">AGORA</string>
+    <string name="matches_time_tbd">A definir</string>
+    <string name="matches_today_prefix">Hoje</string>
+    <string name="matches_today_time">Hoje, %1$s</string>
+    <string name="match_detail_back_content_description">Back</string>
+    <string name="match_detail_vs">vs</string>
+    <string name="match_detail_retry">Retry</string>
+    <string name="match_detail_tbd">TBD</string>
+    <string name="match_detail_unknown_player">Unknown</string>
+    <string name="match_detail_player_photo_content_description">Player photo</string>
+    <string name="match_detail_team_logo_content_description">%1$s logo</string>
+    <string name="match_detail_generic_error">Something went wrong</string>
+</resources>
